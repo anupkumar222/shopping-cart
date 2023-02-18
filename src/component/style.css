@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom css */
+
+.container {
+    width: 30%;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.size {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.size-box {
+    margin-top: 5rem;
+}
+img {
+    width: 100%;
+}
+.product-img {
+    position: relative;
+}
+.tag {
+    position: absolute;
+   
+    left: 37.8rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem ;
+    font-size: 0.8rem;
+}
+.box {
+    width: 80%;
+    padding: 2rem;
+}
+.product-box {
+    width: 100%;
+}
+
+.product-item-details {
+    text-align: center;
+    padding: 24px 0;
+}
+
+.product-item-title {
+    font-size: 18px;
+    color: #272727;
+}
+.line {
+    display: inline-block;
+    width: 24px;
+    border-bottom: 2px solid #eabf00;
+    margin: 8px 0;
+}
+.product-item-price {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+button {
+   
+        background: #272727;
+        border: none;
+        padding: 10px 30px;
+        color: #ececec;
+        margin-top: 10px;
+        cursor: pointer;
+   
+}
+
+.cart-img {
+    width: 4rem;
+    background-color: black;
+}
+
+.cart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #272727;
+        width: 30%;
+        color: #fff;
+        height: 100%;
+        -webkit-transition: right .2s;
+        transition: right .2s;
+}
+
+.close-btn {
+    position: absolute;
+    right: 100%;
+}
+.close-btn, .open-btn {
+    background-color: #272727;
+    top: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+.cart-body {
+    height: 100%;
+    overflow-y: scroll;
+}
+.cart-heading {
+    text-align: center;
+    font-size: 32px;
+    padding: 32px 0;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.cart-icon, .cart-item, .close-cart {
+    position: relative;
+}
+.cart-item {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item-details {
+    color: grey;
+}
+.cart-item-name {
+    color: #fff;
+}
+.cart-price div, p {
+    margin-bottom: 10px;
+}
+
+.cart-cross {
+    position: absolute;
+    top: 5px;
+    font-size: 21px;
+    right: 27px;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+}
+.price {
+    color: #eabf00;
+}
+.plus-icon {
+    font-size: 12px;
+    background: #000;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}   
+.cart-checkout {
+    background: #272727;
+    padding: 25px 20px;
+}
+.cart-checkout button {
+    background: #000;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.each-product {
+    width: 25%;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.active {
+    background-color: #eabf00;
+    color: white;
+    border-radius: black;
+}
