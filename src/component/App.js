@@ -20,12 +20,16 @@ class App extends React.Component {
         let clonedData = [...data.products]
         let { filterData, selectedOrder, activeSizes } = this.state
         let newData = [];
+        if(activeSizes.length < 1) {
+            newData = clonedData
+        } else {
+            newData = clonedData.filter((product) => {
+                return product.availableSizes.some((size => {
+                    return activeSizes.includes(size)
+                }))
+            })
+        }
 
-        newData = clonedData.filter((product) => {
-            return product.availableSizes.some((size => {
-                return activeSizes.includes(size)
-            }))
-        })
 
         newData = newData.sort((a, b) => {
             if (selectedOrder === "highest") {

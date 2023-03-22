@@ -14,7 +14,7 @@ class Section extends React.Component {
                 <div className="box">
                 <div className="products-filter flex space-between">
                     <p>{this.props.data.length } Products found. </p>
-                    <div class="sort">Order by
+                    <div className="sort">Order by
                     <select onChange={this.props.handleSortByPrice}>
                         <option value="">Select</option>
                         <option value="lowest">Lowest to highest</option>
@@ -29,14 +29,14 @@ class Section extends React.Component {
                         <div className="each-product flex wrap">
                             <img className="product-img" src={`static/products/${product.sku}_1.jpg`} alt="sample" />
                             <span className="tag">Free Shipping</span>
-                            <div class="product-item-details">
-                                <p class="product-item-title">
+                            <div className="product-item-details">
+                                <p className="product-item-title">
                                     {product.title}
                                 </p>
                     
-                                <div class="line">
+                                <div className="line">
                                 </div>
-                                <h3 class="product-item-price">
+                                <h3 className="product-item-price">
                                     {`$ ${product.price}`}
                                 </h3>
                                 <button
